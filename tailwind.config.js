@@ -22,7 +22,7 @@ export default {
         9: "hsl(185, 94%, 87%)",
         10: "hsl(186, 100%, 94%)",
       },
-      secondary: {
+      gray: {
         1: "hsl(209, 61%, 16%)",
         2: "hsl(211, 39%, 23%)",
         3: "hsl(209, 34%, 30%)",
@@ -35,6 +35,15 @@ export default {
         9: "hsl(212, 33%, 89%)",
         10: "hsl(210, 36%, 96%)",
       },
+      white: "#ffffff",
+      black: "#000000",
+    },
+    screens: {
+      xs: "576px",
+      sm: "768px",
+      md: "800px",
+      lg: "992px",
+      xl: "1170px",
     },
   },
   plugins: [],

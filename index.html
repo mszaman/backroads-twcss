@@ -4,12 +4,186 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>BackRoads</title>
   </head>
   <body>
-    <div id="app" class="text-primary-4 text-center text-3xl">
-      Hello BackRoads
+    <div id="app">
+      <!-- Navigation Menu Bar -->
+      <nav
+        class="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-white px-16"
+      >
+        <img src="./images/logo.svg" alt="Backroads" />
+        <ul class="flex gap-x-2 tracking-[0.25rem] text-gray-3">
+          <li>
+            <a class="duration-300 hover:text-primary-4" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="duration-300 hover:text-primary-4" href="#about">About</a>
+          </li>
+          <li>
+            <a class="duration-300 hover:text-primary-4" href="#services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="duration-300 hover:text-primary-4" href="#tours">Tours</a>
+          </li>
+        </ul>
+        <ul class="flex gap-x-2 text-primary-5">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative flex h-screen items-center justify-center bg-gradient-to-b from-[rgba(44,174,186)] to-[rgba(0,0,0,0.4)]"
+      >
+        <img
+          src="./images/main.jpeg"
+          alt="Hero Image"
+          class="absolute h-full w-full object-cover mix-blend-soft-light"
+        />
+        <div class="z-10 mx-20 py-10 text-center">
+          <h1
+            class="mb-4 text-6xl font-bold uppercase tracking-widest text-white"
+          >
+            continue exploring
+          </h1>
+          <p class="mb-8 text-[1rem] tracking-[0.25rem] text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            explicabo debitis est autem dicta.
+          </p>
+          <a
+            href="#tours"
+            class="bg-white px-8 py-4 text-2xl uppercase tracking-widest text-primary-5"
+            >explore tours</a
+          >
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="mx-auto w-[90vw] py-20 lg:w-[95vw]">
+        <div
+          class="mb-16 text-center text-4xl font-extrabold uppercase tracking-[0.25rem] text-gray-2"
+        >
+          <h1>about <span class="text-primary-5">us</span></h1>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-x-10">
+          <div class="mb-8 lg:relative lg:mb-0">
+            <div
+              class="xl:before:absolute xl:before:-left-6 xl:before:-top-6 xl:before:-z-10 xl:before:box-border xl:before:h-full xl:before:w-full xl:before:border-8 xl:before:border-primary-4"
+            >
+              <img src="./images/about.jpeg" alt="" class="block w-full" />
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mb-3 text-[1.75rem] font-extrabold capitalize tracking-[0.25rem] text-gray-2"
+            >
+              explore the difference
+            </h2>
+            <p class="mb-5 text-base tracking-widest text-gray-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
+              sapiente odio unde dolor?
+            </p>
+            <p class="mb-8 text-base tracking-widest text-gray-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
+              sapiente odio unde dolor?
+            </p>
+            <a
+              href="#"
+              class="border-4 border-primary-5 bg-primary-5 px-3 py-[6px] text-sm uppercase tracking-[0.25rem] text-white shadow transition duration-300 ease-linear hover:border-primary-8 hover:bg-primary-8 hover:text-primary-1"
+              >read more</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="bg-gray-10 py-20">
+        <div
+          class="mb-16 text-center text-4xl font-extrabold uppercase tracking-[0.25rem] text-gray-2"
+        >
+          <h1>our <span class="text-primary-5">services</span></h1>
+        </div>
+        <div
+          class="xs:grid-cols-2 xs:grid mx-auto w-[90vw] gap-8 lg:w-[95vw] lg:grid-cols-3"
+        >
+          <article class="xs:mb-0 mb-12 text-center xl:flex xl:text-left">
+            <span
+              class="mb-6 inline-block bg-primary-5 p-2 text-[2rem] text-primary-1"
+            >
+              <i class="fa-solid fa-wallet w-[1.25em] text-center"></i>
+            </span>
+            <div class="xl:pl-4">
+              <h4
+                class="mb-3 text-sm font-bold capitalize tracking-[0.25rem] text-gray-1"
+              >
+                saving money
+              </h4>
+              <p class="x mx-auto mb-5 max-w-80 text-sm text-gray-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, officia.
+              </p>
+            </div>
+          </article>
+          <article class="xs:mb-0 mb-12 text-center xl:flex xl:text-left">
+            <span
+              class="mb-6 inline-block bg-primary-5 p-2 text-[2rem] text-primary-1"
+            >
+              <i class="fa-solid fa-tree w-[1.25em] text-center"></i>
+            </span>
+            <div class="xl:pl-4">
+              <h4
+                class="mb-3 text-sm font-bold capitalize tracking-[0.25rem] text-gray-1"
+              >
+                endless hiking
+              </h4>
+              <p class="x mx-auto mb-5 max-w-80 text-sm text-gray-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, officia.
+              </p>
+            </div>
+          </article>
+          <article class="xs:mb-0 mb-12 text-center xl:flex xl:text-left">
+            <span
+              class="mb-6 inline-block bg-primary-5 p-2 text-[2rem] text-primary-1"
+            >
+              <i class="fa-solid fa-socks w-[1.25em] text-center"></i>
+            </span>
+            <div class="xl:pl-4">
+              <h4
+                class="mb-3 text-sm font-bold capitalize tracking-[0.25rem] text-gray-1"
+              >
+                amazing comfort
+              </h4>
+              <p class="x mx-auto mb-5 max-w-80 text-sm text-gray-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, officia.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>
