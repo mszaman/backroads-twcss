@@ -17,56 +17,72 @@
   <body>
     <div id="app">
       <!-- Navigation Menu Bar -->
-      <nav
-        class="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-white px-16"
-      >
-        <img src="./images/logo.svg" alt="Backroads" />
-        <ul class="flex gap-x-2 tracking-[0.25rem] text-gray-3">
-          <li>
-            <a class="duration-300 hover:text-primary-4" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="duration-300 hover:text-primary-4" href="#about">About</a>
-          </li>
-          <li>
-            <a class="duration-300 hover:text-primary-4" href="#services"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a class="duration-300 hover:text-primary-4" href="#tours">Tours</a>
-          </li>
-        </ul>
-        <ul class="flex gap-x-2 text-primary-5">
-          <li>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-telegram"></i></a>
-          </li>
-        </ul>
-      </nav>
+
+      <header class="absolute h-16 w-full bg-white">
+        <nav class="mx-auto flex h-16 w-[95vw] items-center justify-between">
+          <!-- Nav Logo -->
+          <div>
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <!-- Nav Menu Items -->
+          <ul
+            id="nav-links"
+            class="absolute left-0 top-16 z-10 flex min-h-screen w-full -translate-x-full flex-col gap-y-10 bg-white p-10 tracking-[0.25rem] text-primary-6 lg:static lg:top-0 lg:min-h-16 lg:-translate-x-0 lg:flex-row lg:items-center lg:justify-center lg:gap-x-3 lg:p-0"
+          >
+            <!-- absolute -top-full left-0 -z-10 min-h-screen w-full bg-white
+            transition-all duration-500 lg:static lg:top-0 lg:z-10 lg:min-h-16" -->
+            <!-- <div
+              class="absolute left-0 top-0 -z-10 hidden h-screen w-full -translate-y-full bg-white p-10 transition-all duration-1000 ease-linear lg:static lg:block lg:min-h-16 lg:w-auto lg:bg-white lg:p-0"
+            ></div> -->
+            <li>
+              <a class="duration-300 hover:text-primary-4" href="#hero">Home</a>
+            </li>
+            <li>
+              <a class="duration-300 hover:text-primary-4" href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="duration-300 hover:text-primary-4" href="#services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="duration-300 hover:text-primary-4" href="#tours"
+                >Tours</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center gap-x-10">
+            <ul class="flex gap-x-5 text-primary-5">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+              </li>
+            </ul>
+            <i
+              class="fa-solid fa-bars cursor-pointer text-2xl lg:hidden"
+              onclick="toggleNavMenu(this)"
+            ></i>
+          </div>
+        </nav>
+      </header>
 
       <!-- Hero Section -->
       <section
         id="hero"
-        class="relative flex h-screen items-center justify-center bg-gradient-to-b from-[rgba(44,174,186)] to-[rgba(0,0,0,0.4)]"
+        class="relative -z-20 flex min-h-screen items-center justify-center bg-primary-5 text-white"
       >
-        <img
-          src="./images/main.jpeg"
-          alt="Hero Image"
-          class="absolute h-full w-full object-cover mix-blend-soft-light"
-        />
-        <div class="z-10 mx-20 py-10 text-center">
-          <h1
-            class="mb-4 text-6xl font-bold uppercase tracking-widest text-white"
-          >
+        <div class="mx-20 py-10 text-center">
+          <h1 class="mb-4 text-6xl font-bold uppercase tracking-widest">
             continue exploring
           </h1>
-          <p class="mb-8 text-[1rem] tracking-[0.25rem] text-white">
+          <p class="mb-8 text-[1rem] tracking-[0.25rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             explicabo debitis est autem dicta.
           </p>
@@ -360,6 +376,6 @@
         </div>
       </section>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
