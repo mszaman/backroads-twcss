@@ -4,13 +4,13 @@ This is the attempt to clone the original **_[John Smilga's Backroads - HTML](ht
 
 # How to Install
 
-First of all you have to have node package module install in you system. You can install node package module from **_[here](https://nodejs.org/en)_**. Then you need to **_clone_** or **_download zip_** file from **_[this link](https://github.com/mszaman/backroads-twcss)_**. Then go to project's root directory and open CLI to install the required package by running the command below.
+First of all you already have to have node package module installed in you system. You can install node package module from **_[here](https://nodejs.org/en)_**. Then you need to **_clone_** or **_download zip_** file from **_[this link](https://github.com/mszaman/backroads-twcss)_**. Then go to project's root directory and open CLI to install the required package by running the command below.
 
 ```shell
 npm install
 ```
 
-After successfully completion of the command above, you need to run the command below to open the project in dev server.
+After the successful completion of the command above, you need to run the command below to open the project in dev server.
 
 ```shell
 npm run dev
