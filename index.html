@@ -17,9 +17,10 @@
   <body>
     <div id="app">
       <!-- Navigation Menu Bar -->
-
       <header class="absolute h-16 w-full bg-white">
-        <nav class="mx-auto flex h-16 w-[95vw] items-center justify-between">
+        <nav
+          class="mx-auto flex h-16 w-[90vw] max-w-[1170px] items-center justify-between"
+        >
           <!-- Nav Logo -->
           <div>
             <img src="./images/logo.svg" alt="" />
@@ -73,6 +74,17 @@
         id="hero"
         class="relative -z-20 flex min-h-screen items-center justify-center bg-primary-5 text-white"
       >
+        <!-- Hero Image -->
+        <img
+          src="./images/main.jpeg"
+          alt="Hero Image"
+          class="hidden sm:absolute sm:top-0 sm:-z-40 sm:block sm:h-screen sm:w-full sm:bg-cover sm:bg-center sm:object-cover"
+        />
+        <!-- Hero Gradient -->
+        <div
+          class="hidden sm:absolute sm:top-0 sm:-z-30 sm:block sm:h-screen sm:w-full sm:bg-gradient-to-b sm:from-primary-5 sm:to-black sm:opacity-70"
+        ></div>
+        <!-- Hero Content -->
         <div class="mx-20 py-10 text-center">
           <h1 class="mb-4 text-6xl font-bold uppercase tracking-widest">
             continue exploring
